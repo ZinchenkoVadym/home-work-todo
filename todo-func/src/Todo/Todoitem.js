@@ -1,5 +1,4 @@
 import React, {useContext} from 'react';
-import PropTypes from 'prop-types'
 import Context from "../context";
 
 let styles = {
@@ -40,10 +39,5 @@ function TodoItem({todo, index, onChange}) {
     )
 }
 
-TodoItem.propTypes = {
-    todo: PropTypes.object.isRequired,
-    index: PropTypes.number,
-    onChange: PropTypes.func.isRequired
-}
 
 export default TodoItem
